@@ -1,0 +1,279 @@
+% LaTeX source of my resume
+% =========================
+
+% Commented for easy reuse... ;)
+
+% See the `README.md` file for more info.
+
+% This file is licensed under the CC-NC-ND Creative Commons license.
+
+
+% start a document with the here given default font size and paper size
+\documentclass[10pt,a4paper]{article}
+
+% include the `tex` instructions that takes care of loading packages and defining commands
+\include{resume-commands}
+
+
+
+\begin{document}  % begin the content of the document
+\sloppy  % this to relax whitespacing in favour of straight margins
+
+\maintitle{Frank Bouwens}{May 30, 1991}  % title on top of the document
+
+\nobreakvspace{0.3em}  % add some page break averse vertical spacing
+
+% \noindent prevents paragraph's first lines from indenting
+% \mbox is used to obfuscate the email address
+% \sbull is a spaced bullet
+% \href well..
+% \\ breaks the line into a new paragraph
+\noindent\href{mailto:frankkie12345@gmail.com}{frankkie12345\mbox{}@\mbox{}gmail.com}\sbull
+\textsmaller{+}31 641594567\sbull
+\href{http://www.linkedin.com/in/frankkie12345}{www.linkedin.com/in/frankkie12345}
+\\
+Harp 29\sbull
+3068\thinspace {\sc HM}\sbull
+Rotterdam\sbull
+The Netherlands
+
+\spacedhrule{0.9em}{-0.4em}  % a horizontal line with some vertical spacing before and after
+
+\roottitle{Summary}  % a root section title
+
+\vspace{-1.3em}  % some vertical spacing
+\begin{multicols}{2}  % open a multicolumn environment
+\noindent \emph{Experienced Android Developer with a passion for open-source software.}
+\\
+\\
+With a career spanning over a decade in native mobile development, I specialize in building Android applications. My technical journey began with a lifelong passion for coding. From early experimentation with PHP and Java to engineering production-grade apps used by millions, such as Flitsmeister.
+\\
+\\
+Throughout my career, I have worked in both autonomous roles and collaborative teams, on projects from concept to the Google Play Store. I am continuous learning about the latest tech. Frequently engaging with the hackerspace community and Dutch Android user group to stay at the cutting edge of mobile engineering.
+\end{multicols}
+
+\spacedhrule{0em}{-0.4em}
+
+\roottitle{Experience}
+
+\headedsection
+  {\href{https://flitsmeister.nl}{Flitsmeister}}
+  {\textsc{Veenendaal, The Netherlands}} {
+    \headedsubsection
+    {\acr{Android Developer}}
+    {Apr 2019-Dec 2026}
+    {\bodytext{Flitsmeister offers a navigation app for in the car, well known for reporting speed traps and speed cameras. However, Flitsmeister does much more, placing an increasing focus on safety. The app provides warnings for ambulances, emergency services, railway crossings, and wrong-way drivers. Additionally, the Flitsmeister app has been expanded with features such as paying for parking and toll, and paying for car washes. Within Flitsmeister, I worked on Android Auto support, frequently collaborating with the Automotive team at Google, which made Flitsmeister the first 3rd-party navigation app on the platform. Furthermore, I worked on the Bluetooth communication for the Flitsmeister ONE and contributed to the development of the Flitsmeister DASH.}
+    }
+  }
+  
+\headedsection
+  {\href{https://gitlab.com/PrivateTracer/android-client-v2/}{Private Tracer - Corona app}}
+  {\textsc{Remote}}{
+	\headedsubsection
+	{\acr{Android Developer}}
+	{Apr 2020-May 2020}
+	{\bodytext{During the COVID-19 pandemic, various contact tracing apps were developed. Through my employer (Flitsmeister), I was informed that Private Tracer could use my expertise. Due to my experience with BLE (Bluetooth Low-Energy), I was able to contribute to the development of the Private Tracer Android client. The apps were designed to track whether people had been in close proximity to each other for longer than 15 minutes to trace the spread of the virus, in a privacy-preserving manner. Parts of Private Tracer were ultimately used in the official Dutch national corona app.
+	}
+	}  
+  }
+
+\headedsection
+  {\href{https://www.bitfactory.nl}{Bitfactory}}
+  {\textsc{Rotterdam, The Netherlands}} {
+    \headedsubsection
+      {\acr{PHP, Android, and iOS Developer}}
+      {Mar 2017-Mar 2019}
+      {\bodytext{Bitfactory is a digital agency primarily focused on custom websites. Several of these websites (including Dierenbescherming and Tony's Chocolonely) have received the 'Website of the Year' award. Bitfactory's websites are built in PHP using various frameworks.
+      \\
+      For example, I worked on a system (BijZijn) to track student attendance at courses. This consists of a web portal and an API developed with Laravel and Lumen respectively, alongside mobile apps for Android (Java) and iOS (Swift). The app uses BLE to verify attendance. BijZijn is integrated with CRM systems built in CakePHP, also developed at Bitfactory.
+      \\
+      Commissioned by the Municipality of Rotterdam, Bitfactory developed a system for municipal enforcement officers (BOAs, city wardens) consisting of a web portal, an API, and apps for Android and iOS. The officers use these apps to communicate and file reports in the field.
+      \\
+      Furthermore, I developed an iOS application for InterHear. This app acts as a hearing aid for individuals whose hearing loss is not yet severe enough for an expensive medical hearing device, but who still need support. Sound is amplified by the iPhone or iPad and speech is made clearer; ideal for meetings in noisy environments.
+      }
+      }
+  }
+
+\headedsection
+  {\href{https://www.innovattic.nl}{Innovattic}}
+  {\textsc{Delft, The Netherlands}} {
+  
+    \headedsubsection
+      {\acr{Android Developer}}
+      {Oct 2016-Mar 2017}
+      {\bodytext{Innovattic works on various mobile application projects (including healthcare) and serious games. At Innovattic, I worked on an Android application using ResearchStack (a port of Apple's ResearchKit) designed to survey patients' health daily. If concerning values are entered, a doctor can be alerted immediately. By reviewing historical values, doctors can monitor whether patients are recovering well without requiring frequent in-person visits.
+      \\
+       For Kids Worldwide Factory, Innovattic developed a tablet application (Android and iOS) for young children. The app, Kidiyo, features educational games and episodes of the children's series 'Chloe's Closet' and 'Princess Arabelle'.
+      }
+      }
+  }
+
+\headedsection
+  {\href{https://www.auxilium.nl}{Auxilium}}
+  {\textsc{Delft, The Netherlands}} {
+  
+    \headedsubsection
+      {\acr{Android and .NET Developer}}
+      {Sep 2015-Oct 2016}
+      {\bodytext{Auxilium undertakes projects across various industries. At Auxilium, I worked on the Android application for AutoReset, used by employed drivers to manage ride scheduling and registration, as well as to directly declare expenses such as refueling and car washes.
+      \\
+      I also worked on an application for hospital patients. Patients can view upcoming appointments and purchase supplementary services based on them, such as hiring a driver to pick them up from home, accompany them to the doctor's visit, and safely bring them back home. Additionally, I worked on several enterprise .NET web applications, including a scheduling system for elderly care organizations whose volunteers use vans to transport seniors from home to supermarkets and various recreational outings.}
+      }
+  }
+
+
+\headedsection  % sets the header for the section and includes any subsections
+  {\href{http://www.veliq.com}{VeliQ}}
+  {\textsc{Barendrecht, The Netherlands}} {%
+
+  \headedsubsection  % sets the header for a subsection and contains usually body text
+    {\acr{Android Developer}}
+    {Feb 2012-Aug 2015}
+    {\bodytext{VeliQ builds Mobile Device Management solutions for the enterprise market. MobiDM integrates various external systems to make the platform attractive to large corporations.
+\\
+During my graduation internship at VeliQ, I developed an API enabling other companies to build mobile management portals. It was based on an existing API within the suite but optimized for mobile devices by utilizing REST/JSON instead of SOAP. SOAP calls are much heavier, lack good libraries, and consume more data traffic. I developed proof-of-concept applications to demonstrate that the API functioned correctly.
+\\
+Beyond my internship, I also worked on the MobiDM Android client. This application is used to manage devices and enforces security policies on the device, such as requiring a lock screen password. Among other things, I worked on integrating an antivirus module and streamlining a simpler, more user-friendly enrollment procedure.}
+   }
+}
+
+\headedsection
+{\href{http://www.anewspring.nl}{aNewSpring}}
+{\textsc{Rotterdam, The Netherlands}}
+{
+ \headedsubsection
+ {\acr{Android Developer}}
+ {Feb 2011}
+ {\bodytext{aNewSpring creates e-learning solutions for educators, providing a complete system to deliver courses and guide students. At this company, I developed a mobile application that assists students with learning. The app quizzes the student with 10 course questions every day. Questions answered incorrectly reappear the following day until all questions are answered correctly. Multiple question types are supported, including multiple choice (single correct answer), multi-choice (multiple answers), text (a word as the answer), and hotspot (identifying a spot on an image). The application communicates with aNewSpring's backend system to make this possible. During the development of this app, I collaborated with another Android programmer and multiple backend developers.}}
+}
+
+\vspace{20pt}
+
+\headedsection
+{\href{http://www.themobilecompany.nl}{The Mobile Company}}
+{\textsc{Amsterdam, The Netherlands}}
+{
+ \headedsubsection
+ {\acr{Android Developer}}
+ {Jan 2009-Jan 2011}
+ {\bodytext{The Mobile Company develops mobile applications on behalf of other companies. I contributed to Android projects such as iTour360 and 9292ov Pro.
+\\
+iTour360 is a location-based tour-guide app that provides city tours (initially covering Almere). The app prompts the user to walk to a specific location and then plays audio information about various points of interest. When this app was released, smartphones were not yet mainstream, and not everyone carried one. For this reason, the app was pre-installed on HTC Wildfire devices which were then rented out at tourist information (VVV) offices. To prevent misuse, users were restricted from leaving the application by running a custom homescreen on the devices through which only the iTour360 app could be opened.
+\\
+When I started working on the 9292ov Pro app, it had just been released. The developer who created it (an intern) had just left the company, leaving me with only the source code. The program contained many bugs that needed fixing, alongside new features to implement. It took some time to understand the code because the developer had originally built an iOS app rather than an Android app, passing the source code through a converter. This resulted in methods hundreds of lines long where the code didn't even start until after 16 indents. After a few months, the major bugs were resolved, a departure times screen was integrated, and a widget was added.
+}}
+
+}
+
+\begin{center}
+  \emph{See also \href{http://www.linkedin.com/in/frankkie12345}{my LinkedIn profile} for a complete list of my work experience and recommendations.}
+\end{center}
+
+
+
+\spacedhrule{-0.2em}{-0.4em}
+
+\roottitle{Education}
+
+\headedsection
+  {Rotterdam University}
+  {\textsc{Rotterdam, The Netherlands}} {%
+  \headedsubsection
+    {Bachelor of Science in Computer Science}
+    {2008 -- 2014}
+    {\bodytext{Programming in Java, Android applications, etc.}}
+}
+
+\headedsection
+  {Comenius College}
+  {\textsc{Capelle aan den IJssel, The Netherlands}} {%
+  \headedsubsection
+    {\acr{HAVO} \textnormal{(High school, profile: Science and Technology)}}
+    {2003 -- 2008} {}
+}
+
+\headedsection
+  {Udacity}
+  {\textsc{Udacity.com}} {
+  \headedsection
+  {\acr{Android} \textnormal{Online course: Developing Android Apps}}
+  {2014 -- 2015} 
+  {\bodytext{Selected by the Dutch Android User Group (GDG) as one of the first to take a Google-developed Android course. Afterward, I taught this course to others as an instructor.}}
+  }
+
+\spacedhrule{0.5em}{-0.4em}
+
+\roottitle{Skills}
+
+\inlineheadsection  % special section that has an inline header with a 'hanging' paragraph
+  {Technical Specializations:}
+  {Software design and implementation (in a team). \\
+  I have extensive experience with the programming languages: \acr{Kotlin}, \acr{Java}, and \acr{PHP}. \\
+  Additionally, I have moderate experience with: \acr{Swift} (iOS), \acr{TypeScript}, and \acr{JavaScript}. \\
+  Furthermore, I have worked with technologies such as:\ \acr{HTML+CSS}, \acr{XML}, \acr{REST}, \acr{JSON}, \acr{SOAP}, \acr{Vagrant}, and \acr{MySQL}.}
+
+\inlineheadsection
+  {Languages:}
+  {Dutch \emph{(Native)}, English \emph{(Fluent)}, German \emph{(Beginner)}.}
+
+
+\spacedhrule{1.6em}{-0.4em}
+
+\roottitle{Interests}
+
+\inlineheadsection
+  {In alphabetical order:}
+  {3D printing, Android, automobiles, cryptography, Google, hackerspaces, Kotlin, MeshCore, multiplatform, music, open source, PCBs, space exploration, software engineering, sublimation printing, typography (\LaTeX).}
+
+\spacedhrule{1.6em}{-0.4em}
+
+
+\vspace{\fill}
+
+\roottitle{Projects}
+
+\inlineheadsection{Hyperskill Kotlin Course}{
+	JetBrains, the creators of Kotlin, released a course in collaboration with Hyperskill. I followed and completed this course with the goal of testing and refreshing my Kotlin knowledge.
+}
+
+\inlineheadsection{Udacity Android Course}{
+    Google partnered with Udacity to develop a course teaching students how to build Android apps. This course was offered to me via the Dutch Android User Group (local Google Developer Group). After successfully completing the course, I taught it as an instructor to a class of other students. Part of undertaking this course involved developing an app that put the various techniques covered into practice. My \emph{final project app} was the \emph{Convention app}, a program booklet to be used during a convention.
+}
+
+\inlineheadsection{Nav2Contacts - Android Auto/Automotive}{
+	Android Auto is a system allowing you to use your Android phone in combination with a car radio. Applications run on the phone, while the car radio acts merely as an external display. While using Android Auto, I noticed there was no good way to navigate to contacts, which inspired me to develop this application. Nav2Contacts does exactly what the name suggests: you can search for contacts on the car screen and navigate straight to them. The application was later expanded to support Android Automotive, also known as cars with "Google built-in," where the app runs directly on the car's head unit. 	
+}
+
+\inlineheadsection{MeshCore - Giving Presentations}{
+	MeshCore is a wireless communication system, used in practice for short text messages like SMS. It is an open-source system maintained by volunteers, built as a hobby and as a "plan B" to keep communication alive during power outages since all nodes run on batteries and most are connected to solar panels. I regularly give presentations on "MeshCore for Beginners."
+}
+
+\inlineheadsection
+{Tux Words (Lingo):}
+{Hobby project. The app lets users play \emph{Lingo}, just like on TV. This application was developed because a comparable app did not work on all Android device form-factors; competing apps only supported devices with an mdpi screen or higher, excluding smaller (often cheaper) devices with an ldpi screen. Tux Words was built to run on as many devices as possible, making it compatible with all tested smartphones and tablets, as well as Google TV. Tux Words is my most popular app, with over 20,000 downloads on the Google Play Store. It can also be found in the \href{http://apps.samsung.com/venus/topApps/topAppsDetail.as?productId=000000498917}{Samsung Apps Store} and the \href{http://www.amazon.com/FrankkieNL-Tux-Words-Lingo/dp/B0096M4AYU/}{Amazon Appstore}.}
+
+\inlineheadsection
+{BAXY Launcher}
+{Hobby project, custom homescreen for the OUYA game console. The \emph{OUYA} lets users play Android games on a TV using a controller. By default, OUYA displays the list of games in an unpredictable order based on installation date, last update, last used, and most used. Consequently, the order changes every time a game is launched, which most users find annoying. To solve this, I developed BAXY Launcher, which sorts the game list alphabetically. The launcher is further enhanced with filtering capabilities and, unlike the default launcher, supports widgets and live wallpapers. See \href{http://ouyaforum.com/showthread.php?4436-BAXY-Custom-Launcher}{ouyaforum.com/showthread.php?4436} for more information and screenshots.}
+
+
+\inlineheadsection
+  {ParcDroid:}
+  {School project, my first Android application. ParcDroid is a navigation app for children in \emph{De Efteling}. A meeting point can be chosen in advance, and if the child gets lost, the app helps them navigate back to that location using GPS and the compass, among other things. This project taught me not only more about Android but also about mathematics and Dijkstra's algorithm (the routing algorithm also used by TomTom navigation systems, among others). ParcDroid won first prize, making it the best application of that school year.}
+  
+
+\inlineheadsection{Google Glass}{
+Through a colleague, I had the opportunity to experiment with \emph{Google Glass} for a week. During this week, I developed an application that uses the camera to detect faces—recognizing not \emph{who} it sees, but simply detecting the presence of a face.
+}
+
+\inlineheadsection{Apps for Omate TrueSmart Smartwatch}{
+Through a \href{https://www.kickstarter.com/projects/omate/omate-truesmart-water-resistant-standalone-smartwa}{Kickstarter} project, I acquired an \href{http://www.omate.com/}{Omate} Smartwatch. I quickly realized the watch had a few flaws, which I fixed using custom apps. For instance, the watch fails to advance the internal clock while powered down—something that happened quite frequently due to poor battery life. If the watch shut down at 12:00 and was turned back on at 1:00, it would still report the time as 12:00. While the watch had built-in time synchronization features, they required a SIM card or a strong GPS signal. To solve this, I developed an application that synchronizes the time via an internet NTP server. Another flaw was the lack of volume buttons; the built-in MP3 player app always played at the exact same volume. A simple application with volume buttons resolved this issue.
+}
+
+\vspace{10pt}
+
+\begin{center}
+  \emph{See also \href{http://frankkienl.github.com/}{GitHub} and \href{https://play.google.com/store/apps/developer?id=FrankkieNL}{the Google Play Store} for a more comprehensive list of my projects.}
+\end{center}
+
+\end{document}
